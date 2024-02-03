@@ -1,0 +1,47 @@
+*{
+    box-sizing: border;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'open sans' ,sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header header'
+                        'nav main aside'
+                        'nav footer footer';
+    grid-template-columns: 1fr 4fr 1fr ;    
+    grid-template-rows: 80px 1fr 70px;                
+
+}
+header{
+    grid-area: header;
+
+}
+
+nav{
+    grid-area: nav;
+
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;}
+
+main{
+    grid-area: main;}
+
+
+header,
+main,
+aside,
+footer,
+nav{
+    background-color: steelblue;
+    padding: 20px;
+    border: 1px solid lightblue;
+    color: beige;
+}
